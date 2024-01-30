@@ -5,6 +5,10 @@ body {
     background: #0076CE;
 }
 
+a {
+    text-decoration: none;
+}
+
 .top-header {
     background: #002D62;
     height: 70px;
@@ -118,14 +122,12 @@ button {
   
 .center-text {
     color: white;
-    /* padding-left: 25px; */
     padding-top: 100px; 
     text-align: center;
 }
 
 .btn-container {
     padding-top: 15px;
-    /* padding-left: 110px; */
 }
 
 .signup-btn {
@@ -184,7 +186,7 @@ button {
   .message, 
   .signin {
     font-size: 14.5px;
-    color: #0076CE;
+    color: #fff;
   }
   
   .signin {
@@ -192,7 +194,8 @@ button {
   }
   
   .signin a:hover {
-    text-decoration: underline royalblue;
+    text-decoration: underline #fff;
+    color: #fff;
   }
   
   .signin a {
@@ -218,9 +221,9 @@ button {
     border: 1px solid #002D62;
     border-radius: 10px;
   }
-  
+
   .form label .input + span {
-    color: #002D62;
+    color: #fff;
     position: absolute;
     left: 10px;
     top: 0px;
@@ -250,17 +253,59 @@ button {
     border: none;
     outline: none;
     padding: 10px;
+    width: 50%;
     border-radius: 10px;
     color: #fff;
     font-size: 16px;
     transform: .3s ease;
     background-color: #0076CE;
   }
+
+  .submit a:visited {
+    color: #fff;
+  }
   
   .submit:hover {
     background-color: #00bfff96;
   }
   
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  .login {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #0076CE;
+    margin-left: 50px;
+  }
+
+  .login a:visited {
+    color: #fff;
+  }
+  
+  .login:hover {
+    background-color: #00bfff96;
+  }
+  
+  .login a:visited {
+    color: #fff;
+  }
+
   @keyframes pulse {
     from {
       transform: scale(0.9);
